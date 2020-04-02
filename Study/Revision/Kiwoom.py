@@ -14,6 +14,7 @@ class Kiwoom(QAxWidget):
         super().__init__()
         self._create_kiwoom_instance()
         self._set_signal_slots()
+        self.OnReceiveChejanData.connect(self._receive_chejan_data)
 
     def _create_kiwoom_instance(self):
         self.setControl("KHOPENAPI.KHOpenAPICtrl.1")
@@ -26,8 +27,6 @@ class Kiwoom(QAxWidget):
         self.dynamicCall("CommConnect()")
         self.login_event_loop = QEventLoop()
         self.login_event_loop.exec_()
-
-
 
     def _event_connect(self, err_code):
         if err_code == 0:
@@ -98,3 +97,24 @@ class Kiwoom(QAxWidget):
             self.ohlcv['low'].append(int(low))
             self.ohlcv['close'].append(int(close))
             self.ohlcv['volume'].append(int(volume))
+
+    def send_order(self, rqname, screen_no, acc_no, order_type, code, quantity, price, hoga, order_no):
+        self.dynamicCall("SendOrder(QString, QString, QString, int, QString, int, int, QString, QString)",
+                         [rqname, screen_no, acc_no, order_type, code, quantity, price, hoga, order_no])
+
+    def get_chejan_data(self, fid):
+        ret = self.dynamicCall("GetChejanData(int)",fid)
+        return ret
+
+    def _receive_chejan_data(self, gubun, item_cnt, fid_list):
+        print(gubun)
+        print(self.get_chejan_data(9203))
+        print(self.get_chejan_data(302))
+        print(self.get_chejan_data(900))
+        print(self.get_chejan_data(901))
+
+    def get_login_info(self, tag):
+        ret = self.dynamicCall("GetLoginInfo(QString)", tag)
+        return ret
+
+
