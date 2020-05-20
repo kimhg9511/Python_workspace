@@ -19,7 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e0c5943-8a8d-4537-8651-a5fe49fcf3ad" name="Default Changelist" comment="" />
+    <list default="true" id="2e0c5943-8a8d-4537-8651-a5fe49fcf3ad" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Study/bigdata/01_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/Study/bigdata/01_list.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Study/bigdata/06_for.py" beforeDir="false" afterPath="$PROJECT_DIR$/Study/bigdata/06_for.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Study/bigdata/07_while.py" beforeDir="false" afterPath="$PROJECT_DIR$/Study/bigdata/07_while.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,8 +54,8 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
-  <component name="RunManager" selected="Python.07_while">
-    <configuration name="03_sequence" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.ex_challenge">
+    <configuration name="01_list" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python_workspace" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -62,49 +67,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="D:\bigdata\Python_workspace\Study\bigdata\03_sequence.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="04_dictionary" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Python_workspace" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Study/bigdata" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Study/bigdata/04_dictionary.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="05_if" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Python_workspace" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Study/bigdata" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Study/bigdata/05_if.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Study/bigdata/01_list.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -155,13 +118,55 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="ex_challenge" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Python_workspace" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Study/bigdata" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Study/bigdata/ex_challenge.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ex_turtle" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Python_workspace" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Study/bigdata" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Study/bigdata/ex_turtle.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.07_while" />
+        <item itemvalue="Python.ex_challenge" />
         <item itemvalue="Python.06_for" />
-        <item itemvalue="Python.05_if" />
-        <item itemvalue="Python.04_dictionary" />
-        <item itemvalue="Python.03_sequence" />
+        <item itemvalue="Python.01_list" />
+        <item itemvalue="Python.ex_turtle" />
+        <item itemvalue="Python.07_while" />
       </list>
     </recent_temporary>
   </component>
@@ -183,7 +188,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589875032127</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="[2020-05-19]update(python basic syntax)">
+      <created>1589875142274</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1589875142274</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -211,34 +223,50 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="564" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1585141714601" />
-    <state width="696" height="221" key="GridCell.Tab.0.bottom" timestamp="1589875065038">
+    <state width="696" height="221" key="GridCell.Tab.0.bottom" timestamp="1589958298492">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state width="1224" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1585144009247" />
-    <state width="696" height="221" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1589875065038" />
-    <state width="696" height="221" key="GridCell.Tab.0.center" timestamp="1589875065037">
+    <state width="696" height="221" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1589958298492" />
+    <state width="696" height="221" key="GridCell.Tab.0.center" timestamp="1589958298491">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state width="1224" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1585144009247" />
-    <state width="696" height="221" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1589875065037" />
-    <state width="696" height="221" key="GridCell.Tab.0.left" timestamp="1589875065037">
+    <state width="696" height="221" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1589958298491" />
+    <state width="696" height="221" key="GridCell.Tab.0.left" timestamp="1589958298490">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state width="1224" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1585144009247" />
-    <state width="696" height="221" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1589875065037" />
-    <state width="696" height="221" key="GridCell.Tab.0.right" timestamp="1589875065037">
+    <state width="696" height="221" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1589958298490" />
+    <state width="696" height="221" key="GridCell.Tab.0.right" timestamp="1589958298492">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state width="1224" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1585144009247" />
-    <state width="696" height="221" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1589875065037" />
+    <state width="696" height="221" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1589958298492" />
+    <state width="696" height="275" key="GridCell.Tab.1.bottom" timestamp="1589946516227">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state width="696" height="275" key="GridCell.Tab.1.bottom/0.0.1440.860@0.0.1440.860" timestamp="1589946516227" />
+    <state width="696" height="275" key="GridCell.Tab.1.center" timestamp="1589946516227">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state width="696" height="275" key="GridCell.Tab.1.center/0.0.1440.860@0.0.1440.860" timestamp="1589946516227" />
+    <state width="696" height="275" key="GridCell.Tab.1.left" timestamp="1589946516211">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state width="696" height="275" key="GridCell.Tab.1.left/0.0.1440.860@0.0.1440.860" timestamp="1589946516211" />
+    <state width="696" height="275" key="GridCell.Tab.1.right" timestamp="1589946516227">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state width="696" height="275" key="GridCell.Tab.1.right/0.0.1440.860@0.0.1440.860" timestamp="1589946516227" />
     <state x="284" y="0" key="SettingsEditor" timestamp="1585141718119">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="284" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1585141718119" />
-    <state x="624" y="166" key="Vcs.Push.Dialog.v2" timestamp="1589875045344">
+    <state x="624" y="166" key="Vcs.Push.Dialog.v2" timestamp="1589875154244">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state x="624" y="166" key="Vcs.Push.Dialog.v2/0.0.1440.860@0.0.1440.860" timestamp="1589875045344" />
+    <state x="624" y="166" key="Vcs.Push.Dialog.v2/0.0.1440.860@0.0.1440.860" timestamp="1589875154244" />
     <state x="813" y="100" width="534" height="667" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1589872056025">
       <screen x="0" y="0" width="1440" height="860" />
     </state>

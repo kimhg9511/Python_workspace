@@ -16,11 +16,12 @@ import random as r
 #     print(dice)
 #     cnt += 1
 # print(cnt, '회 반복', sep='')
-
-# i=2, j=5
-i = 2
-j = 5
-while i != 64 or j != 0:
-    print(i, j)
-    i = i*2
-    j = j-1
+#
+# # i=2, j=5
+# i = 2
+# j = 5
+# while i != 64 or j != 0:
+#     print(i, j)
+#     i = i*2
+#     j = j-1
+#
