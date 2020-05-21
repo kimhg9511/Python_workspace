@@ -41,5 +41,27 @@
 # print(ay, by, cy)
 #
 # # quiz [5, 3, 1, -1, -3, -5, -7, -9]
-print(list(range(5, -10, -2)))
-
+# print(list(range(5, -10, -2)))
+#
+# a = tuple(range(0,100,10))
+# print(a)
+# # index(value)
+# print(a.index(30))  # 4
+#
+# # count(value)
+# print(a.count(40))  # 1
+#
+# # tuple comprehension
+# a = tuple(i for i in range(10) if i % 2 == 0)
+# print(a)  # (0, 2, 4, 6, 8)
+#
+# # map
+# a = (1.2, 2.5, 3.7, 4.6)
+# a = tuple(map(int, a))
+# print(a)  # (1, 2, 3, 4)
+#
+# min, max, sum
+a = (38, 21, 53, 62, 19)
+print(min(a))  # 19
+print(max(a))  # 62
+print(sum(a))  # 193

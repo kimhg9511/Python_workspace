@@ -107,9 +107,62 @@
 # a = [i for i in range(10) if i % 2 == 0]
 # print(a)  # [0, 2, 4, 6, 8]
 #
-# map
-a = [1.2, 2.5, 3.7, 4.6]
-a = list(map(int, a))
-print(a)  # [1, 2, 3, 4]
-inputSum = sum(list(map(int, input().split())))
-print(inputSum)
+# # map
+# a = [1.2, 2.5, 3.7, 4.6]
+# a = list(map(int, a))
+# print(a)  # [1, 2, 3, 4]
+# inputSum = sum(list(map(int, input().split())))
+# print(inputSum)
+#
+# # Two Dimension List
+# from pprint import pprint as p
+# a = [[10, 20],
+#      [500, 600, 700],
+#      [9],
+#      [30, 40],
+#      [8],
+#      [800, 900, 1000]]
+# p(a, indent=4, width=40)
+#
+# append
+# a = [[]]
+# a[0].append(10)
+# # a.append([])
+# a.append([9])
+# print(a)
+#
+# # for
+# a = [[10, 20], [30, 40], [50, 60]]
+# for x, y in a:
+#     print(x, y)
+#
+# # for 3x3
+from pprint import pprint as pp
+# a = list()
+# for i in range(3):
+#     b = list()
+#     for j in range(3):
+#         b.append(3*i + j)
+#     a.append(b)
+# a = [[i * 3 + j for j in range(3)] for i in range(3)]
+# pp(a, indent=4, width=20)
+#
+# deepcopy
+a = [[10, 20],
+     [30, 40],
+     50]
+b = a
+b[0][0] = 500
+print(a)  # [[500, 20], [30, 40], 50]
+print(b)  # [[500, 20], [30, 40], 50]
+b = a.copy()
+b[0][0] = 1000
+b[2] = 150
+print(a)  # [[1000, 20], [30, 40], 50]
+print(b)  # [[1000, 20], [30, 40], 150]
+import copy
+b = copy.deepcopy(a)
+b[0][0] = 1500
+b[2] = 250
+print(a)  # [[1000, 20], [30, 40], 50]
+print(b)  # [[1500, 20], [30, 40], 250]
