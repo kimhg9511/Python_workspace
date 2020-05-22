@@ -20,14 +20,20 @@
 # import random as r
 # com = r.randint(0, 99)
 # isCorrect = False
+# count = 0
 # while not isCorrect:
-#     print(com)
-#     answer = int(input('맞춰보세요(0~99): '))
-#     if answer < com:
-#         print(f'{answer}보단 커요')
-#     elif answer == com:
-#         print('정답!')
+#     count += 1
+#     answer = input('맞춰보세요(0~99): ')
+#     if answer.isnumeric():
+#         answer = int(answer)
+#     else:
+#         print('잘못된 값입니다.')
+#         continue
+#     if answer == com:
+#         print(f'정답! {count}번만에 맞추셨군요')
 #         isCorrect = True
+#     elif answer < com:
+#         print(f'{answer}보단 커요')
 #     else:
 #         print(f'{answer}보단 작아요')
 #
