@@ -64,6 +64,16 @@ while not isCorrect:
         print('오답! hint:')
         for result in resultSet:
             print(result)
-
-
-
+#
+# # 회문 판별하기
+# palindrome = input('단어를 한 개 입력하세요: ')
+# output = f'{palindrome}은(는) ' + ('회문입니다.' if palindrome == palindrome[::-1] else '회문이 아닙니다.')
+# print(output)
+#
+# N-gram
+text = 'Helloasdasdasdasd'
+nGram = 3
+nGramList = []
+for i in range(len(text)-(nGram-1)):
+    nGramList.append(text[i:i+nGram])
+print(nGramList)

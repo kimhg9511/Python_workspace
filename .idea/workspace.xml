@@ -52,8 +52,8 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
-  <component name="RunManager" selected="Python.김현겸_sum_avg">
-    <configuration name="09_set" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.12_closure">
+    <configuration name="11_function" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python_workspace" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -65,7 +65,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Study/bigdata/09_set.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Study/bigdata/11_function.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -74,7 +74,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="10_file" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="12_closure" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python_workspace" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -86,7 +86,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Study/bigdata/10_file.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Study/bigdata/12_closure.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -160,11 +160,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.12_closure" />
+        <item itemvalue="Python.11_function" />
+        <item itemvalue="Python.ex_challenge" />
         <item itemvalue="Python.김현겸_sum_avg" />
         <item itemvalue="Python.김현겸_baseball" />
-        <item itemvalue="Python.ex_challenge" />
-        <item itemvalue="Python.10_file" />
-        <item itemvalue="Python.09_set" />
       </list>
     </recent_temporary>
   </component>
@@ -241,42 +241,42 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="564" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1585141714601" />
-    <state width="1419" height="211" key="GridCell.Tab.0.bottom" timestamp="1590131393699">
+    <state width="696" height="183" key="GridCell.Tab.0.bottom" timestamp="1590393135994">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state width="1224" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1585144009247" />
-    <state width="1419" height="211" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1590131393699" />
-    <state width="1419" height="211" key="GridCell.Tab.0.center" timestamp="1590131393699">
+    <state width="696" height="183" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1590393135994" />
+    <state width="696" height="183" key="GridCell.Tab.0.center" timestamp="1590393135994">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state width="1224" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1585144009247" />
-    <state width="1419" height="211" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1590131393699" />
-    <state width="1419" height="211" key="GridCell.Tab.0.left" timestamp="1590131393699">
+    <state width="696" height="183" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1590393135994" />
+    <state width="696" height="183" key="GridCell.Tab.0.left" timestamp="1590393135994">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state width="1224" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1585144009247" />
-    <state width="1419" height="211" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1590131393699" />
-    <state width="1419" height="211" key="GridCell.Tab.0.right" timestamp="1590131393699">
+    <state width="696" height="183" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1590393135994" />
+    <state width="696" height="183" key="GridCell.Tab.0.right" timestamp="1590393135994">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state width="1224" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1585144009247" />
-    <state width="1419" height="211" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1590131393699" />
-    <state width="696" height="275" key="GridCell.Tab.1.bottom" timestamp="1590110963062">
+    <state width="696" height="183" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1590393135994" />
+    <state width="696" height="272" key="GridCell.Tab.1.bottom" timestamp="1590376534903">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="696" height="275" key="GridCell.Tab.1.bottom/0.0.1440.860@0.0.1440.860" timestamp="1590110963062" />
-    <state width="696" height="275" key="GridCell.Tab.1.center" timestamp="1590110963062">
+    <state width="696" height="272" key="GridCell.Tab.1.bottom/0.0.1440.860@0.0.1440.860" timestamp="1590376534903" />
+    <state width="696" height="272" key="GridCell.Tab.1.center" timestamp="1590376534903">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="696" height="275" key="GridCell.Tab.1.center/0.0.1440.860@0.0.1440.860" timestamp="1590110963062" />
-    <state width="696" height="275" key="GridCell.Tab.1.left" timestamp="1590110963062">
+    <state width="696" height="272" key="GridCell.Tab.1.center/0.0.1440.860@0.0.1440.860" timestamp="1590376534903" />
+    <state width="696" height="272" key="GridCell.Tab.1.left" timestamp="1590376534903">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="696" height="275" key="GridCell.Tab.1.left/0.0.1440.860@0.0.1440.860" timestamp="1590110963062" />
-    <state width="696" height="275" key="GridCell.Tab.1.right" timestamp="1590110963062">
+    <state width="696" height="272" key="GridCell.Tab.1.left/0.0.1440.860@0.0.1440.860" timestamp="1590376534903" />
+    <state width="696" height="272" key="GridCell.Tab.1.right" timestamp="1590376534903">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="696" height="275" key="GridCell.Tab.1.right/0.0.1440.860@0.0.1440.860" timestamp="1590110963062" />
+    <state width="696" height="272" key="GridCell.Tab.1.right/0.0.1440.860@0.0.1440.860" timestamp="1590376534903" />
     <state x="284" y="0" key="SettingsEditor" timestamp="1585141718119">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -289,10 +289,10 @@
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="813" y="100" width="534" height="667" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1440.860@0.0.1440.860" timestamp="1589872056025" />
-    <state x="885" y="346" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1590027098408">
+    <state x="885" y="346" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1590378826666">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state x="885" y="346" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.860@0.0.1440.860" timestamp="1590027098408" />
+    <state x="885" y="346" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.860@0.0.1440.860" timestamp="1590378826666" />
     <state x="874" y="292" key="scopes" timestamp="1590048918123">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
