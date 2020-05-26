@@ -116,4 +116,4 @@
 #
 # 이미지 파일만 가져오기(png, jpg) - lambda 사용
 files = ['font', '1.png', '10.jpg', '11.gif', '2.jpg', '3.png', 'table.xslx', 'spec.docx']
-print(list(filter(lambda x: x.count('.png') or x.count('.jpg'), files)))
+print(list(filter(lambda x: x.endswith('.png') or x.endswith('.jpg'), files)))

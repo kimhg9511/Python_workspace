@@ -13,11 +13,44 @@
 # dictTest = foo()
 # print(dictTest['x'])
 #
-# closure
-def calc():
-    a = 3
-    b = 5
-    total = 0
-    return lambda x: a * x + b
-c = calc()
-print(c(1), c(2), c(3), c(4), c(5))
+# # closure
+# def calc():
+#     a = 3
+#     b = 5
+#     total = 0
+#     def mul_add(x):
+#         nonlocal total
+#         total = total + a * x + b
+#         print(total)
+#     return mul_add
+# c = calc()
+# c(1)
+# c(2)
+# c(3)
+#
+# 호출 횟수를 세는 함수
+def counter():
+    i = 0
+
+    def count():
+        nonlocal i
+        i += 1
+        return i
+    return count
+
+class Counter:
+    j = 0
+
+    def count(self):
+        self.j += 1
+        return self.j
+
+c = counter()
+classC = Counter()
+for i in range(10):
+    print(c(), end=' ')
+    print(classC.count(), end=' ')
+print()
+print(classC.j)
+# print(c.i)  # error!
+print(dir(c.__closure__[0]))
