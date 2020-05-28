@@ -16,13 +16,17 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e0c5943-8a8d-4537-8651-a5fe49fcf3ad" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Python_workspace.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Python_workspace.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Study/bigdata/james.p" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +41,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="web_crawling" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1ZcUKBBhdjiDaFBXosXBB5kx0fJ" />
@@ -55,12 +64,15 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\bigdata\Python_workspace\Study\bigdata" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\bigdata\Python_workspace\Study\bigdata\package_calc" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.19_import">
-    <configuration name="17_decorator" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.21_csv">
+    <configuration name="20_1_db_mysql" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python_workspace" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -72,7 +84,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Study/bigdata/17_decorator.py" />
+      <option name="SCRIPT_NAME" value="D:\bigdata\Python_workspace\Study\bigdata\20_1_db_mysql.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -81,7 +93,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="18_regular_expression" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="20_2_db_sqlite" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python_workspace" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -93,7 +105,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Study/bigdata/18_regular_expression.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Study/bigdata/20_2_db_sqlite.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -102,7 +114,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="19_import" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="20_3_db_mssql" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python_workspace" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -114,7 +126,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Study/bigdata/19_import.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Study/bigdata/20_3_db_mssql.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -123,7 +135,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="module_calc" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="21_csv" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python_workspace" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -135,7 +147,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Study/bigdata/module_calc.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Study/bigdata/21_csv.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -167,11 +179,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.19_import" />
-        <item itemvalue="Python.module_calc" />
+        <item itemvalue="Python.21_csv" />
+        <item itemvalue="Python.20_2_db_sqlite" />
+        <item itemvalue="Python.20_3_db_mssql" />
+        <item itemvalue="Python.20_1_db_mysql" />
         <item itemvalue="Python.module_name" />
-        <item itemvalue="Python.18_regular_expression" />
-        <item itemvalue="Python.17_decorator" />
       </list>
     </recent_temporary>
   </component>
@@ -228,7 +240,21 @@
       <option name="project" value="LOCAL" />
       <updated>1590479235640</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="[2020-05-27]update(python basic syntax -deco, rexp, import)">
+      <created>1590562895359</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1590562895359</updated>
+    </task>
+    <task id="LOCAL-00008" summary="[2020-05-28]update(basic crawling)">
+      <created>1590630419752</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1590630419752</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -236,7 +262,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -249,17 +287,19 @@
     <MESSAGE value="[2020-05-21]update(python-basic-syntax)" />
     <MESSAGE value="[2020-05-25]update(python basic syntax-function,variable arg, closure)" />
     <MESSAGE value="[2020-05-26]update(python basic syntax - class, iterator)" />
-    <option name="LAST_COMMIT_MESSAGE" value="[2020-05-26]update(python basic syntax - class, iterator)" />
+    <MESSAGE value="[2020-05-27]update(python basic syntax -deco, rexp, import)" />
+    <MESSAGE value="[2020-05-28]update(basic crawling)" />
+    <option name="LAST_COMMIT_MESSAGE" value="[2020-05-28]update(basic crawling)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="466" y="0" key="#Notifications" timestamp="1585141728846">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="466" y="0" key="#Notifications/0.0.1280.680@0.0.1280.680" timestamp="1585141728846" />
-    <state x="834" y="234" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1590561270616">
+    <state x="834" y="234" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1590571896295">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state x="834" y="234" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.860@0.0.1440.860" timestamp="1590561270616" />
+    <state x="834" y="234" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.860@0.0.1440.860" timestamp="1590571896295" />
     <state x="810" y="286" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1590456470077">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
@@ -269,51 +309,51 @@
     </state>
     <state x="564" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1585141714601" />
     <state x="635" y="120" key="FileChooserDialogImpl/0.0.1440.860@0.0.1440.860" timestamp="1590560516279" />
-    <state width="347" height="183" key="GridCell.Tab.0.bottom" timestamp="1590562182648">
+    <state width="696" height="256" key="GridCell.Tab.0.bottom" timestamp="1590650975312">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state width="1224" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1585144009247" />
-    <state width="347" height="183" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1590562182648" />
-    <state width="347" height="183" key="GridCell.Tab.0.center" timestamp="1590562182648">
+    <state width="696" height="256" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1590650975312" />
+    <state width="696" height="256" key="GridCell.Tab.0.center" timestamp="1590650975312">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state width="1224" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1585144009247" />
-    <state width="347" height="183" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1590562182648" />
-    <state width="347" height="183" key="GridCell.Tab.0.left" timestamp="1590562182648">
+    <state width="696" height="256" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1590650975312" />
+    <state width="696" height="256" key="GridCell.Tab.0.left" timestamp="1590650975312">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state width="1224" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1585144009247" />
-    <state width="347" height="183" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1590562182648" />
-    <state width="347" height="183" key="GridCell.Tab.0.right" timestamp="1590562182648">
+    <state width="696" height="256" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1590650975312" />
+    <state width="696" height="256" key="GridCell.Tab.0.right" timestamp="1590650975312">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state width="1224" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1585144009247" />
-    <state width="347" height="183" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1590562182648" />
-    <state width="1419" height="274" key="GridCell.Tab.1.bottom" timestamp="1590558373565">
+    <state width="696" height="256" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1590650975312" />
+    <state width="1419" height="274" key="GridCell.Tab.1.bottom" timestamp="1590567855234">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="1419" height="274" key="GridCell.Tab.1.bottom/0.0.1440.860@0.0.1440.860" timestamp="1590558373565" />
-    <state width="1419" height="274" key="GridCell.Tab.1.center" timestamp="1590558373565">
+    <state width="1419" height="274" key="GridCell.Tab.1.bottom/0.0.1440.860@0.0.1440.860" timestamp="1590567855234" />
+    <state width="1419" height="274" key="GridCell.Tab.1.center" timestamp="1590567855234">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="1419" height="274" key="GridCell.Tab.1.center/0.0.1440.860@0.0.1440.860" timestamp="1590558373565" />
-    <state width="1419" height="274" key="GridCell.Tab.1.left" timestamp="1590558373565">
+    <state width="1419" height="274" key="GridCell.Tab.1.center/0.0.1440.860@0.0.1440.860" timestamp="1590567855234" />
+    <state width="1419" height="274" key="GridCell.Tab.1.left" timestamp="1590567855234">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="1419" height="274" key="GridCell.Tab.1.left/0.0.1440.860@0.0.1440.860" timestamp="1590558373565" />
-    <state width="1419" height="274" key="GridCell.Tab.1.right" timestamp="1590558373565">
+    <state width="1419" height="274" key="GridCell.Tab.1.left/0.0.1440.860@0.0.1440.860" timestamp="1590567855234" />
+    <state width="1419" height="274" key="GridCell.Tab.1.right" timestamp="1590567855234">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="1419" height="274" key="GridCell.Tab.1.right/0.0.1440.860@0.0.1440.860" timestamp="1590558373565" />
+    <state width="1419" height="274" key="GridCell.Tab.1.right/0.0.1440.860@0.0.1440.860" timestamp="1590567855234" />
     <state x="442" y="30" key="SettingsEditor" timestamp="1590560548185">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="284" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1585141718119" />
     <state x="442" y="30" key="SettingsEditor/0.0.1440.860@0.0.1440.860" timestamp="1590560548185" />
-    <state x="624" y="166" key="Vcs.Push.Dialog.v2" timestamp="1590479242055">
+    <state x="624" y="166" key="Vcs.Push.Dialog.v2" timestamp="1590630433147">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state x="624" y="166" key="Vcs.Push.Dialog.v2/0.0.1440.860@0.0.1440.860" timestamp="1590479242055" />
+    <state x="624" y="166" key="Vcs.Push.Dialog.v2/0.0.1440.860@0.0.1440.860" timestamp="1590630433147" />
     <state x="813" y="100" width="534" height="667" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1589872056025">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
@@ -326,9 +366,9 @@
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="874" y="292" key="scopes/0.0.1440.860@0.0.1440.860" timestamp="1590048918123" />
-    <state x="743" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1590111810531">
+    <state x="743" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1590644782588">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state x="743" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1440.860@0.0.1440.860" timestamp="1590111810531" />
+    <state x="743" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1440.860@0.0.1440.860" timestamp="1590644782588" />
   </component>
 </project>
