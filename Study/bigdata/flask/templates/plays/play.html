@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>plays/play.html</title>
+</head>
+<body>
+<h3>Title : {{ title }}</h3>
+<h3>Sports</h3>
+{%
+for sport in sports
+%}
+    <h4>{{ sport }}</h4>
+{%
+endfor
+%}
+<h3>Games</h3>
+{%
+for game in games
+%}
+    <h4>{{ game }}</h4>
+{%
+endfor
+%}
+</body>
+</html>
