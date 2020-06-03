@@ -13,11 +13,14 @@ data = data[['Adj Close']]
 data.columns = ['AAPL']
 data = data.tz_localize('UTC')
 
+
 def initialize(context):
     pass
 
+
 def handle_data(context, data):
     order(symbol('AAPL'), 1)
+
 
 algo = TradingAlgorithm(initialize=initialize, handle_data=handle_data)
 result = algo.run(data)
