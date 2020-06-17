@@ -1,0 +1,304 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>02.빅데이터파일럿프로젝트</title><link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 40px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; }
+button, input, select, textarea { color: inherit; font: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 2; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px !important; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror-linenumber { user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  html.blink-to-pdf { font-size: 13px; }
+  .typora-export #write { padding-left: 32px; padding-right: 32px; padding-bottom: 0px; break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
+.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; overflow-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none 0s ease 0s; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="mermaid"] svg, [lang="flow"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+svg[id^="mermaidChart"] { line-height: 1em; }
+
+
+.CodeMirror { height: auto; }
+.CodeMirror.cm-s-inner { background: inherit; }
+.CodeMirror-scroll { overflow: auto hidden; z-index: 3; }
+.CodeMirror-gutter-filler, .CodeMirror-scrollbar-filler { background-color: rgb(255, 255, 255); }
+.CodeMirror-gutters { border-right: 1px solid rgb(221, 221, 221); background: inherit; white-space: nowrap; }
+.CodeMirror-linenumber { padding: 0px 3px 0px 5px; text-align: right; color: rgb(153, 153, 153); }
+.cm-s-inner .cm-keyword { color: rgb(119, 0, 136); }
+.cm-s-inner .cm-atom, .cm-s-inner.cm-atom { color: rgb(34, 17, 153); }
+.cm-s-inner .cm-number { color: rgb(17, 102, 68); }
+.cm-s-inner .cm-def { color: rgb(0, 0, 255); }
+.cm-s-inner .cm-variable { color: rgb(0, 0, 0); }
+.cm-s-inner .cm-variable-2 { color: rgb(0, 85, 170); }
+.cm-s-inner .cm-variable-3 { color: rgb(0, 136, 85); }
+.cm-s-inner .cm-string { color: rgb(170, 17, 17); }
+.cm-s-inner .cm-property { color: rgb(0, 0, 0); }
+.cm-s-inner .cm-operator { color: rgb(152, 26, 26); }
+.cm-s-inner .cm-comment, .cm-s-inner.cm-comment { color: rgb(170, 85, 0); }
+.cm-s-inner .cm-string-2 { color: rgb(255, 85, 0); }
+.cm-s-inner .cm-meta { color: rgb(85, 85, 85); }
+.cm-s-inner .cm-qualifier { color: rgb(85, 85, 85); }
+.cm-s-inner .cm-builtin { color: rgb(51, 0, 170); }
+.cm-s-inner .cm-bracket { color: rgb(153, 153, 119); }
+.cm-s-inner .cm-tag { color: rgb(17, 119, 0); }
+.cm-s-inner .cm-attribute { color: rgb(0, 0, 204); }
+.cm-s-inner .cm-header, .cm-s-inner.cm-header { color: rgb(0, 0, 255); }
+.cm-s-inner .cm-quote, .cm-s-inner.cm-quote { color: rgb(0, 153, 0); }
+.cm-s-inner .cm-hr, .cm-s-inner.cm-hr { color: rgb(153, 153, 153); }
+.cm-s-inner .cm-link, .cm-s-inner.cm-link { color: rgb(0, 0, 204); }
+.cm-negative { color: rgb(221, 68, 68); }
+.cm-positive { color: rgb(34, 153, 34); }
+.cm-header, .cm-strong { font-weight: 700; }
+.cm-del { text-decoration: line-through; }
+.cm-em { font-style: italic; }
+.cm-link { text-decoration: underline; }
+.cm-error { color: red; }
+.cm-invalidchar { color: red; }
+.cm-constant { color: rgb(38, 139, 210); }
+.cm-defined { color: rgb(181, 137, 0); }
+div.CodeMirror span.CodeMirror-matchingbracket { color: rgb(0, 255, 0); }
+div.CodeMirror span.CodeMirror-nonmatchingbracket { color: rgb(255, 34, 34); }
+.cm-s-inner .CodeMirror-activeline-background { background: inherit; }
+.CodeMirror { position: relative; overflow: hidden; }
+.CodeMirror-scroll { height: 100%; outline: 0px; position: relative; box-sizing: content-box; background: inherit; }
+.CodeMirror-sizer { position: relative; }
+.CodeMirror-gutter-filler, .CodeMirror-hscrollbar, .CodeMirror-scrollbar-filler, .CodeMirror-vscrollbar { position: absolute; z-index: 6; display: none; }
+.CodeMirror-vscrollbar { right: 0px; top: 0px; overflow: hidden; }
+.CodeMirror-hscrollbar { bottom: 0px; left: 0px; overflow: hidden; }
+.CodeMirror-scrollbar-filler { right: 0px; bottom: 0px; }
+.CodeMirror-gutter-filler { left: 0px; bottom: 0px; }
+.CodeMirror-gutters { position: absolute; left: 0px; top: 0px; padding-bottom: 30px; z-index: 3; }
+.CodeMirror-gutter { white-space: normal; height: 100%; box-sizing: content-box; padding-bottom: 30px; margin-bottom: -32px; display: inline-block; }
+.CodeMirror-gutter-wrapper { position: absolute; z-index: 4; background: 0px 0px !important; border: none !important; }
+.CodeMirror-gutter-background { position: absolute; top: 0px; bottom: 0px; z-index: 4; }
+.CodeMirror-gutter-elt { position: absolute; cursor: default; z-index: 4; }
+.CodeMirror-lines { cursor: text; }
+.CodeMirror pre { border-radius: 0px; border-width: 0px; background: 0px 0px; font-family: inherit; font-size: inherit; margin: 0px; white-space: pre; overflow-wrap: normal; color: inherit; z-index: 2; position: relative; overflow: visible; }
+.CodeMirror-wrap pre { overflow-wrap: break-word; white-space: pre-wrap; word-break: normal; }
+.CodeMirror-code pre { border-right: 30px solid transparent; width: fit-content; }
+.CodeMirror-wrap .CodeMirror-code pre { border-right: none; width: auto; }
+.CodeMirror-linebackground { position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px; z-index: 0; }
+.CodeMirror-linewidget { position: relative; z-index: 2; overflow: auto; }
+.CodeMirror-wrap .CodeMirror-scroll { overflow-x: hidden; }
+.CodeMirror-measure { position: absolute; width: 100%; height: 0px; overflow: hidden; visibility: hidden; }
+.CodeMirror-measure pre { position: static; }
+.CodeMirror div.CodeMirror-cursor { position: absolute; visibility: hidden; border-right: none; width: 0px; }
+.CodeMirror div.CodeMirror-cursor { visibility: hidden; }
+.CodeMirror-focused div.CodeMirror-cursor { visibility: inherit; }
+.cm-searching { background: rgba(255, 255, 0, 0.4); }
+@media print {
+  .CodeMirror div.CodeMirror-cursor { visibility: hidden; }
+}
+
+
+:root { --side-bar-bg-color: #fafafa; --control-text-color: #777; }
+html { font-size: 16px; }
+body { font-family: "Open Sans", "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; color: rgb(51, 51, 51); line-height: 1.6; }
+#write { max-width: 860px; margin: 0px auto; padding: 30px 30px 100px; }
+#write > ul:first-child, #write > ol:first-child { margin-top: 30px; }
+a { color: rgb(65, 131, 196); }
+h1, h2, h3, h4, h5, h6 { position: relative; margin-top: 1rem; margin-bottom: 1rem; font-weight: bold; line-height: 1.4; cursor: text; }
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor { text-decoration: none; }
+h1 tt, h1 code { font-size: inherit; }
+h2 tt, h2 code { font-size: inherit; }
+h3 tt, h3 code { font-size: inherit; }
+h4 tt, h4 code { font-size: inherit; }
+h5 tt, h5 code { font-size: inherit; }
+h6 tt, h6 code { font-size: inherit; }
+h1 { padding-bottom: 0.3em; font-size: 2.25em; line-height: 1.2; border-bottom: 1px solid rgb(238, 238, 238); }
+h2 { padding-bottom: 0.3em; font-size: 1.75em; line-height: 1.225; border-bottom: 1px solid rgb(238, 238, 238); }
+h3 { font-size: 1.5em; line-height: 1.43; }
+h4 { font-size: 1.25em; }
+h5 { font-size: 1em; }
+h6 { font-size: 1em; color: rgb(119, 119, 119); }
+p, blockquote, ul, ol, dl, table { margin: 0.8em 0px; }
+li > ol, li > ul { margin: 0px; }
+hr { height: 2px; padding: 0px; margin: 16px 0px; background-color: rgb(231, 231, 231); border: 0px none; overflow: hidden; box-sizing: content-box; }
+li p.first { display: inline-block; }
+ul, ol { padding-left: 30px; }
+ul:first-child, ol:first-child { margin-top: 0px; }
+ul:last-child, ol:last-child { margin-bottom: 0px; }
+blockquote { border-left: 4px solid rgb(223, 226, 229); padding: 0px 15px; color: rgb(119, 119, 119); }
+blockquote blockquote { padding-right: 0px; }
+table { padding: 0px; word-break: initial; }
+table tr { border-top: 1px solid rgb(223, 226, 229); margin: 0px; padding: 0px; }
+table tr:nth-child(2n), thead { background-color: rgb(248, 248, 248); }
+table tr th { font-weight: bold; border-width: 1px 1px 0px; border-top-style: solid; border-right-style: solid; border-left-style: solid; border-top-color: rgb(223, 226, 229); border-right-color: rgb(223, 226, 229); border-left-color: rgb(223, 226, 229); border-image: initial; border-bottom-style: initial; border-bottom-color: initial; margin: 0px; padding: 6px 13px; }
+table tr td { border: 1px solid rgb(223, 226, 229); margin: 0px; padding: 6px 13px; }
+table tr th:first-child, table tr td:first-child { margin-top: 0px; }
+table tr th:last-child, table tr td:last-child { margin-bottom: 0px; }
+.CodeMirror-lines { padding-left: 4px; }
+.code-tooltip { box-shadow: rgba(0, 28, 36, 0.3) 0px 1px 1px 0px; border-top: 1px solid rgb(238, 242, 242); }
+.md-fences, code, tt { border: 1px solid rgb(231, 234, 237); background-color: rgb(248, 248, 248); border-radius: 3px; padding: 2px 4px 0px; font-size: 0.9em; }
+code { background-color: rgb(243, 244, 244); padding: 0px 2px; }
+.md-fences { margin-bottom: 15px; margin-top: 15px; padding-top: 8px; padding-bottom: 6px; }
+.md-task-list-item > input { margin-left: -1.3em; }
+@media print {
+  html { font-size: 13px; }
+  table, pre { break-inside: avoid; }
+  pre { overflow-wrap: break-word; }
+}
+.md-fences { background-color: rgb(248, 248, 248); }
+#write pre.md-meta-block { padding: 1rem; font-size: 85%; line-height: 1.45; background-color: rgb(247, 247, 247); border: 0px; border-radius: 3px; color: rgb(119, 119, 119); margin-top: 0px !important; }
+.mathjax-block > .code-tooltip { bottom: 0.375rem; }
+.md-mathjax-midline { background: rgb(250, 250, 250); }
+#write > h3.md-focus::before { left: -1.5625rem; top: 0.375rem; }
+#write > h4.md-focus::before { left: -1.5625rem; top: 0.285714rem; }
+#write > h5.md-focus::before { left: -1.5625rem; top: 0.285714rem; }
+#write > h6.md-focus::before { left: -1.5625rem; top: 0.285714rem; }
+.md-image > .md-meta { border-radius: 3px; padding: 2px 0px 0px 4px; font-size: 0.9em; color: inherit; }
+.md-tag { color: rgb(167, 167, 167); opacity: 1; }
+.md-toc { margin-top: 20px; padding-bottom: 20px; }
+.sidebar-tabs { border-bottom: none; }
+#typora-quick-open { border: 1px solid rgb(221, 221, 221); background-color: rgb(248, 248, 248); }
+#typora-quick-open-item { background-color: rgb(250, 250, 250); border-color: rgb(254, 254, 254) rgb(229, 229, 229) rgb(229, 229, 229) rgb(238, 238, 238); border-style: solid; border-width: 1px; }
+.on-focus-mode blockquote { border-left-color: rgba(85, 85, 85, 0.12); }
+header, .context-menu, .megamenu-content, footer { font-family: "Segoe UI", Arial, sans-serif; }
+.file-node-content:hover .file-node-icon, .file-node-content:hover .file-node-open-state { visibility: visible; }
+.mac-seamless-mode #typora-sidebar { background-color: var(--side-bar-bg-color); }
+.md-lang { color: rgb(180, 101, 77); }
+.html-for-mac .context-menu { --item-hover-bg-color: #E6F0FE; }
+#md-notification .btn { border: 0px; }
+.dropdown-menu .divider { border-color: rgb(229, 229, 229); }
+.ty-preferences .window-content { background-color: rgb(250, 250, 250); }
+.ty-preferences .nav-group-item.active { color: white; background: rgb(153, 153, 153); }
+
+
+</style>
+</head>
+<body class='typora-export os-windows' >
+<div  id='write'  class = 'is-node'><h1><a name="2-빅데이터-파일럿-프로젝트" class="md-header-anchor"></a><span>2. 빅데이터 파일럿 프로젝트</span></h1><ul><li><p><span>파일럿 프로젝트 도메인 이해</span></p></li><li><p><span>빅데이터 파일럿 아키텍처 이해</span></p></li><li><p><span>빅데이터 파일럿 프로젝트용 PC 환경 구성</span></p></li><li><p><span>빅데이터 파일럿 프로젝트용 PC 서버 구성</span></p></li><li><p><span>CM(Cloudera Manager) 설치</span></p></li><li><p><span>스마트카 로그 시뮬레이터 설치</span></p></li><li><p><span>파일럿 환경 구성</span></p><p>&nbsp;</p></li></ul><h2><a name="파일럿-프로젝트-도메인-이해" class="md-header-anchor"></a><span>파일럿 프로젝트 도메인 이해</span></h2><h3><a name="도메인-이해" class="md-header-anchor"></a><span>도메인 이해</span></h3><ul><li><span>무엇을 하는 시스템이고 어떤 프로세스를 통해 사용자에게 어떤 가치를 만드는 지 이해</span></li><li><span>자동차의 전자장치와 무선통신을 결합한 스마트카 서비스</span></li><li><a href='https://www.asiae.co.kr/article/2016010212334673018' target='_blank' class='url'>https://www.asiae.co.kr/article/2016010212334673018</a><span> </span></li></ul><pre spellcheck="false" class="md-fences md-end-block ty-contain-cm modeLoaded" lang=""><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang=""><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 0px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">새벽 5시 스마트폰의 알람에 눈을 뜬 A씨는 스마트폰으로 오늘의 날씨를 확인한다. 영하 6도 강추위다. 애플리케이션을 통해 차량 배터리 상태를 확인한 뒤 6시에 출발 예약을 해 둔다. 출근 준비를 마치고 나면 적당한 온도로 차량이 덥혀질 것이다. A씨가 자동차로 다가가 스마트워치를 대자 스르르 문이 열린다. A씨의 생체 정보를 스마트워치가 인식해 이를 자동차로 전송해주기 때문에 A씨 외에는 아무도 자동차를 이용할 수 없다. 운전석에 앉아 음성으로 목적지를 입력하고 난 뒤 A씨는 회사를 향해 자동차를 출발시켰다. 자동차에 장착된 인포테인먼트 기기는 A씨의 음성을 분석한 뒤 그의 기분을 파악해 자동으로 음악을 선곡해 들려준다. 양쪽에는 백미러 대신 디지털카메라와 투명 디스플레이가 사각을 없애준다. 운전 중에 오전 회의에 검토할 보고서가 이메일로 도착한다. 급한 내용이다. A씨는 '자율주행'으로 전환하고 서류를 읽어본다. 자동차는 안전하게 회사 주차장에 도착한다. </span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 184px;"></div><div class="CodeMirror-gutters" style="display: none; height: 184px;"></div></div></div></pre><p>&nbsp;</p><h3><a name="요구사항-확인" class="md-header-anchor"></a><span>요구사항 확인</span></h3><h4><a name="요구사항-1" class="md-header-anchor"></a><span>요구사항 1 </span></h4><ul><li><span>차량의 다양한 장치로부터 발생하는 로그 파일을 수집해서 기능별 상태 점검</span></li><li><span>데이터 발생 위치 : 100대 시범 운행 차량</span></li><li><span>데이터 종류 : 대용량 로그 파일</span></li><li><span>발생 주기 : 3초</span></li><li><span>수집 주기 : 24시간</span></li><li><span>수집 규모 : 1MB/1대 (총 : 100MB)</span></li><li><span>처리 유형 : 배치</span></li><li><span>데이터유형 : CSV(Text, UTF-8)</span></li></ul><h4><a name="요구사항-2" class="md-header-anchor"></a><span>요구사항 2</span></h4><ul><li><span>운전자의 운행 정보가 담긴 로그를 실시간으로 수집해서 주행 패턴 분석</span></li><li><span>데이터 발생 위치 : 100대 시범 운행 차량</span></li><li><span>데이터 종류 : 실시간 로그 파일</span></li><li><span>발생 주기 : 주행관련 이벤트 발생시</span></li><li><span>수집 주기 : 1초</span></li><li><span>수집 규모 : 4KB/1대 (초당 : 약400KB)</span></li><li><span>처리 유형 : 실시간</span></li><li><span>데이터유형 : CSV(Text, UTF-8)</span></li><li><span>P 33 ~ 34 상세  데이터 스키마 확인</span></li></ul><p><img src="http://cfile1.onoffmix.com/attach/XEkT2zARLqiSrtK6bXQ1dX5Vrw6u4YGZ" referrerpolicy="no-referrer" alt="img"></p><h3><a name="데이터셋-살펴보기" class="md-header-anchor"></a><span>데이터셋 살펴보기</span></h3><h4><a name="스마트카-상태-정보-데이터셋" class="md-header-anchor"></a><span>스마트카 상태 정보 데이터셋</span></h4><ul><li><span>요구사항 1, 스마트카 각종 센서로부터 발생  --&gt; 로그 시뮬레이터로 생성</span></li></ul><h4><a name="스마트카-운전자-운행-데이터셋" class="md-header-anchor"></a><span>스마트카 운전자 운행 데이터셋</span></h4><ul><li><span>요구사항 2 , 운전자의 운전 패턴 / 운행 정보 --&gt; 로그 시뮬레이터로 생성</span></li></ul><h4><a name="스마트카-마스터-데이터셋" class="md-header-anchor"></a><span>스마트카 마스터 데이터셋</span></h4><ul><li><span>운전자 프로파일 정보 --&gt; 샘플 파일 사용</span></li></ul><h4><a name="스마트카-물품구매-데이터셋" class="md-header-anchor"></a><span>스마트카 물품구매 데이터셋</span></h4><ul><li><span>스마트카 차량 스마트 스크린으로 구매한 차량 물품 --&gt; 샘플 파일 사용</span></li></ul><p>&nbsp;</p><h2><a name="빅데이터-아키텍처의-이해" class="md-header-anchor"></a><span>빅데이터 아키텍처의 이해</span></h2><h3><a name="빅데이터-구현-기술" class="md-header-anchor"></a><span>빅데이터 구현 기술</span></h3><ul><li><span>구축순서 :  수집 =&gt; 적재 =&gt; 처리/탐색 =&gt; 분석/응용</span></li><li><span>처리/탐색 =&gt; 분석/응용는 필요시 반복 진행</span></li></ul><p><img src="http://cfile1.onoffmix.com/attach/5RHVchTlNn71yenrjdzQhYpxV443dGGq" referrerpolicy="no-referrer" alt="img"></p><h3><a name="빅데이터-소프웨어-구성도-hodoop-echo-system" class="md-header-anchor"></a><span>빅데이터 소프웨어 구성도 (Hodoop Echo System)</span></h3><p><img src="http://cfile1.onoffmix.com/attach/h9nelLcaQ9OB3CQGMLTHbPFNmOggwj9V" referrerpolicy="no-referrer" alt="img"></p><h3><a name="레이어별-구성" class="md-header-anchor"></a><span>레이어별 구성</span></h3><h3><a name="전처리--수집적재--하둡hodoop--후처리-탐색분석" class="md-header-anchor"></a><span>[전처리 : 수집/적재] =&gt; [하둡(Hodoop)] =&gt; [후처리: 탐색/분석]</span></h3><h4><a name="수집-레이어--적재-레이어" class="md-header-anchor"></a><span>수집 레이어 =&gt; 적재 레이어</span></h4><ul><li><p><span>로그등을 수집하기하 위해 플럼(Flume) 사용 : </span></p><ul><li><span>로우데이터 =&gt; 플럼 =&gt; 하둡</span></li></ul></li><li><p><span>실시간 처리를 위해 스톰(Strom) 사용  </span></p><ul><li><span>로우데이터 =&gt; 플럼 =&gt; 카프카(버퍼링,트랜잭션 처리) =&gt; 스톰 =&gt; Hbase, 레디스</span></li></ul></li></ul><h4><a name="적재-레이어--처리탐색-레이어" class="md-header-anchor"></a><span>적재 레이어 =&gt; 처리/탐색 레이어</span></h4><ul><li><span>적재대상 : 하둡, HBase, 레디스</span></li><li><span>대용량 데이터 : 플럼 =&gt; 하둡</span></li><li><span>실시간 데이터 : 분석 결과에 따라 Hbase, 레디스</span></li></ul><p>&nbsp;</p><h4><a name="처리탐색-레이어--분석응용-레이어" class="md-header-anchor"></a><span>처리/탐색 레이어 =&gt; 분석/응용 레이어</span></h4><ul><li><span>하둡 데이터 =&gt; 하이브 =&gt; 정제/변형/분리/탐색 작업 수행 </span></li><li><span>데이터 =&gt; 정형데이터 =&gt; 데이터마트</span></li><li><span>가공/분헉된 데이터 =&gt; 스쿱 =&gt; 외부(DBMS)</span></li><li><span>데이터의 품질을 높이는 단계로 과정이 길고 복잡 =&gt; 우지의 워크플로우로 자동화</span></li></ul><p>&nbsp;</p><h4><a name="분석응용-레이어--데이터-마이닝" class="md-header-anchor"></a><span>분석/응용 레이어 =&gt; 데이터 마이닝</span></h4><ul><li><span>임팔라, 제플린으로 데이터 마트  빠른 분석</span></li><li><span>머하웃으로 하둡  머신러닝(군집, 분류/예측) </span></li></ul><p>&nbsp;</p><h3><a name="하드웨어-아키텍처" class="md-header-anchor"></a><span>하드웨어 아키텍처</span></h3><h4><a name="저사양" class="md-header-anchor"></a><span>저사양</span></h4><ul><li><span>CPU 듀얼코어 이상</span></li><li><span>메모리 8GB 이상(여유 7GB)</span></li><li><span>디스크 60GB 이상</span></li></ul><h4><a name="고사양" class="md-header-anchor"></a><span>고사양</span></h4><ul><li><span>CPU i5 이상 </span></li><li><span>메모리 16GB 이상(여유 15GB)</span></li><li><span>디스크 100GB 이상</span></li></ul><h4><a name="권장" class="md-header-anchor"></a><span>권장</span></h4><ul><li><span>CPU i3 이상 </span></li><li><span>메모리 16GB 이상(여유 15GB)</span></li><li><span>SSD</span></li></ul><h4><a name="구축환경" class="md-header-anchor"></a><span>구축환경</span></h4><ul><li><span>PC OS : Windows 7 or 10</span></li><li><span>가상머신환경 : 오라클 버추얼박스 3대 가상 머신 </span></li><li><span>CentOS 6.7 + CM</span></li><li><span>이클립스 + FTP Client(FileZilla) + SSH Client(Putto or Poderosa)</span></li><li><span>크롬 브라우저 </span></li></ul><p>&nbsp;</p><h3><a name="pc-환경-구성" class="md-header-anchor"></a><span>PC 환경 구성</span></h3><h4><a name="java-설치" class="md-header-anchor"></a><span>JAVA 설치</span></h4><ul><li><span>JDK 1.8 설치</span></li><li><span>환경 변수 자바 설치 디렉토리 JAVA_HOME  설정</span></li><li><span>Path 환경 변수에 %JAVA_HOME%\bin; 추가</span></li></ul><h4><a name="이클립스-설치" class="md-header-anchor"></a><span>이클립스 설치</span></h4><ul><li><span>Eclipse IDE for Java EE Developers</span></li></ul><h4><a name="오라클-버추얼-박스" class="md-header-anchor"></a><span>오라클 버추얼 박스</span></h4><ul><li><span>5.2 사용</span></li></ul><h4><a name="기타" class="md-header-anchor"></a><span>기타</span></h4><ul><li><span>SSH: Poderosa</span></li><li><span>FTP: FileZilla</span></li><li><span>Chrome</span></li></ul><p>&nbsp;</p><p><span>실습예제 - htps://github.com/wikibook/bigdata/archive/master.zip</span></p><p>&nbsp;</p><h4><a name="가상머신-환경-구성v52" class="md-header-anchor"></a><span>가상머신 환경 구성(v5.2)</span></h4><ul><li><span>파일 &gt; 환경설정 &gt; 네트워크 &gt; NatNetwork 있는 지 확인</span></li></ul><h5><a name="파일--호스트-네트워크-관리자" class="md-header-anchor"></a><span>파일 &gt; 호스트 네트워크 관리자</span></h5><ul><li><span>어댑터 : 수동으로 어댑처 설정</span></li><li><span>DHCP 서버 : 서버 사용함 </span></li><li><span>서버주소 : 192.168.56.100</span></li><li><span>서버마스크 : 255.255.255.0</span></li><li><span>최저 주소 한계 : 192.168.56.101</span></li></ul><h5><a name="centos-download----httpsmirrornscliusecentos-store67isosx8664" class="md-header-anchor"></a><span>CentOS Download :   </span><a href='https://mirror.nsc.liu.se/centos-store/6.7/isos/x86_64/' target='_blank' class='url'>https://mirror.nsc.liu.se/centos-store/6.7/isos/x86_64/</a><span> </span></h5><ul><li><span>6.7</span></li></ul><h5><a name="새로만들기" class="md-header-anchor"></a><span>새로만들기</span></h5><ul><li><span>이름 : Server01</span></li><li><span>종류: Linux</span></li><li><span>버전: Other Linux(64Bit)</span></li><li><span>가상메모리  : 2048MB</span></li><li><span>동적할당 30GB</span></li></ul><h5><a name="설정" class="md-header-anchor"></a><span>설정</span></h5><ul><li><span>Server01 &gt; 설정 &gt; 네트워크 &gt; 어댑터1 &gt; NAT 사용하기</span></li><li><span>Server01 &gt; 설정 &gt; 네트워크 &gt; 어댑터2 &gt; 호스트 전용 어댑터 &gt;  무작위 모드 &gt; 모두 허용</span></li></ul><h5><a name="시작" class="md-header-anchor"></a><span>시작</span></h5><ul><li><span>ContOS 선택</span></li></ul><h5><a name="contos-설치" class="md-header-anchor"></a><span>ContOS 설치</span></h5><ul><li><span>hostname : server01.hadoop.com</span></li><li><span>timezone : Asiz/Seoul</span></li><li><span>password : rootpass</span></li><li><span>which type of installation would you like? &gt; Use All Space</span></li><li><span>boot 순서 변경 : 하드디스크, 저장소에서 광학디스크 삭제</span></li></ul><h5><a name="contos-실행" class="md-header-anchor"></a><span>ContOS 실행</span></h5><ul><li><span>Create User : bigdata / bigdatapass</span></li><li><span>Data and Time : Sychronize data and time over the network &gt; check 체크</span></li><li><span>Kdump : Enable kdump &gt; unchekc 체크 해제</span></li></ul><h5><a name="contos-환경-구성" class="md-header-anchor"></a><span>ContOS 환경 구성</span></h5><ul><li><span>로그인 : other &gt; root</span></li><li><span>Application &gt; System Tool &gt; terminal</span></li></ul><h5><a name="부팅-설정-변경--x-windows--terminal" class="md-header-anchor"></a><span>부팅 설정 변경 : X-Windows =&gt; Terminal </span></h5><ul><li><span>vi /etc/inittab</span></li><li><span>id:5 &gt; id:3 </span></li><li><span>reboot</span></li></ul><h5><a name="네트워크-설정" class="md-header-anchor"></a><span>네트워크 설정</span></h5><h5><a name="vi-etcsysconfignetwork-scriptsifcfg-eth0" class="md-header-anchor"></a><span>vi /etc/sysconfig/network-scripts/ifcfg-eth0</span></h5><ul><li><span>HWADDR : 네트워크 어댑터2 MAC Address 080027C5BC76</span></li><li><span>DEVICE=eth0</span></li><li><span>HWADDR=</span></li><li><span>TYPE=Ethernet</span></li><li><span>ONBOOT=yes</span></li><li><span>BOOTPROTO=static</span></li><li><span>IPADDR=192.168.56.101</span></li><li><span>NETMASK=255.255.255.0</span></li><li><span>GATEWAY=192.168.56.1</span></li><li><span>NETWORK==192.168.56.0</span></li></ul><h5><a name="vi-etcudevrulesd70-persistent-netrules" class="md-header-anchor"></a><span>vi /etc/udev/rules.d/70-persistent-net.rules</span></h5><ul><li><span>내용 모두 삭제</span></li><li><span>reboot</span></li><li><span>service network restart</span></li><li><span>ifconfig eth0</span></li><li><span>inet addr : 192.168.56.101 확인</span></li></ul><p>&nbsp;</p><h5><a name="ssh-설치-및-설정" class="md-header-anchor"></a><span>SSH 설치 및 설정</span></h5><ul><li><span>yum install -y openssh*</span></li><li><span>service sshd restart</span></li><li><span>chkconfig sshd on (재시작시 서비스 자동 실행)</span></li><li><span>reboot</span></li><li><span>service network restart</span></li></ul><h5><a name="ssh-접속" class="md-header-anchor"></a><span>SSH 접속 </span></h5><ul><li><span>Poderosa </span></li></ul><h5><a name="hosts-파일-수정" class="md-header-anchor"></a><span>hosts 파일 수정</span></h5><ul><li><span>vi /etc/hosts</span></li><li><span>192.168.56.101 server01.hadoop.com server01</span></li><li><span>192.168.56.102 server02.hadoop.com server02</span></li><li><span>192.168.56.103 server03.hadoop.com server03</span></li></ul><h5><a name="호스트네임-설정" class="md-header-anchor"></a><span>호스트네임 설정</span></h5><ul><li><span>vi /etc/sysconfig/network</span></li><li><span>HOSTNAME=server01.hadoop.com</span></li><li><span>service network restart</span></li></ul><h5><a name="방화벽-및-기타-커널-설정" class="md-header-anchor"></a><span>방화벽 및 기타 커널 설정</span></h5><h5><a name="vi-etcselinuxconfig" class="md-header-anchor"></a><span>vi /etc/selinux/config </span></h5><ul><li><span>SELINUX=disabled</span></li></ul><h5><a name="service-iptables-stop" class="md-header-anchor"></a><span>service iptables stop</span></h5><ul><li><span>iptables 중지</span></li></ul><h5><a name="chkconfig-iptables-off" class="md-header-anchor"></a><span>chkconfig iptables off</span></h5><h5><a name="chkconfig-ip6tables-off" class="md-header-anchor"></a><span>chkconfig ip6tables off</span></h5><h5><a name="sysctl--w-vmswappiness100" class="md-header-anchor"></a><span>sysctl -w vm.swappiness=100</span></h5><h5><a name="vi-etcsysctlconf" class="md-header-anchor"></a><span>vi /etc/sysctl.conf</span></h5><ul><li><span>vm.swappiness=100</span></li></ul><h5><a name="vi-etcrclocal" class="md-header-anchor"></a><span>vi /etc/rc.local</span></h5><ul><li><span>echo never &gt; /sys/kernel/mm/transparent_hugepage/enabled</span></li><li><span>echo never &gt; /sys/kernel/mm/transparent_hugepage/defrag</span></li></ul><h5><a name="vi-etcsecuritylimitsconf" class="md-header-anchor"></a><span>vi /etc/security/limits.conf</span></h5><ul><li><span>root soft nofile 65536</span></li><li><span>root hard nofile 65536</span></li></ul><ul><li><span>*</span><span> soft nofile 65536</span></li><li><span>*</span><span> hard nofile 65536</span></li><li><span>root soft nproc 32768</span></li><li><span>root hard nproc 32768</span></li><li><span>*</span><span> soft nproc 32768</span></li><li><span>*</span><span> hard nproc 32768</span></li></ul><h5><a name="jdk-17-설치---18-설치-openjdk-or-oracle-jdk" class="md-header-anchor"></a><span>JDK 1.7 설치 -&gt; 1.8 설치 (OPENJDK or ORACLE JDK)</span></h5><ul><li><span>서버 전체에 설치</span></li><li><span>클라우데라 버전 확인</span></li></ul><p><span> </span><a href='https://docs.cloudera.com/documentation/enterprise/release-notes/topics/rn_consolidated_pcm.html#pcm_jdk' target='_blank' class='url'>https://docs.cloudera.com/documentation/enterprise/release-notes/topics/rn_consolidated_pcm.html#pcm_jdk</a><span> </span></p><p>&nbsp;</p><h5><a name="openjdk-설치--server01-server01--server03-에-설치" class="md-header-anchor"></a><span>OPENJDK 설치 : server01, server01,  server03 에 설치</span></h5><ul><li><span>yum list java*jdk-devel</span></li><li><span>yum install java-1.8.0-openjdk-devel.x86_64</span></li></ul><ul><li><span>FileZilla SFT로 접속 : 다운받은 jdk 업로드</span></li><li><span>jdk-8u231-linux-64.rpm</span></li><li><span>설치 확인 rpm -qa | grep jdk</span></li><li><span>설치 삭제 yum remove jkd_name</span></li><li><span>설치 yum localinstall jdk-8u231-linux-64.rpm</span></li><li><span>java -version </span></li><li><span>path 확인 : echo $PATH</span></li><li><span>JAVA_HOME 추가 (필요시):  </span><strong><span>export JAVA_HOME=/usr/local/default </span></strong><span> 을 추가</span></li><li><span>which javac =&gt; vi /etc/profile</span></li></ul><ul><li><span>여러버전 설치시 alternatives --config java 실행 후 원하는 버전 선택</span></li></ul><h5><a name="전원-완료--halt" class="md-header-anchor"></a><span>전원 완료 / halt</span></h5><h4><a name="가상머신-복제" class="md-header-anchor"></a><span>가상머신 복제</span></h4><ul><li><span>Server01 전원 끄고 복제 시작</span></li><li><span>새 머신 이름 : Server02 08:00:27:2B:99:27</span></li></ul><h5><a name="vi-etcsysconfignetwork-scriptsifcfg-eth0-n1251" class="md-header-anchor"></a><span>vi /etc/sysconfig/network-scripts/ifcfg-eth0</span></h5><ul><li><span>HWADDR - 어댑터 2, IPADDR 수정 192.168.56.102</span></li></ul><h5><a name="vi-etcudevrulesd70-persistent-netrules-n1255" class="md-header-anchor"></a><span>vi /etc/udev/rules.d/70-persistent-net.rules</span></h5><ul><li><span>모두 삭제</span></li><li><span>전원끄기 재 시작</span></li><li><span>Poderosa 접속</span></li></ul><h5><a name="vi-etchosts-수정" class="md-header-anchor"></a><span>vi /etc/hosts 수정</span></h5><h5><a name="vi-etcsysconfignetwork-수정" class="md-header-anchor"></a><span>vi /etc/sysconfig/network 수정</span></h5><ul><li><span>service network restart</span></li><li><span>reboot</span></li><li><span>ifconfig eth0</span></li><li><span>hostname</span></li></ul><p>&nbsp;</p><h4><a name="가상머신-복제2" class="md-header-anchor"></a><span>가상머신 복제2</span></h4><ul><li><span>Server01 전원 끄고 복제 시작</span></li><li><span>새 머신 이름 : Server03 08:00:27:99:80:38</span></li></ul><p>&nbsp;</p><h4><a name="복제완료-후-메모리-재설정" class="md-header-anchor"></a><span>복제완료 후 메모리 재설정</span></h4><p>&nbsp;</p><h3><a name="빅데이터-클러스트-구성" class="md-header-anchor"></a><span>빅데이터 클러스트 구성 </span></h3><h4><a name="클라우데라-매니저cm-설치" class="md-header-anchor"></a><span>클라우데라 매니저(CM) 설치</span></h4><ul><li><span>프로비저닝 : 하둡 에코시스템을 편리하게 설치, 수정, 삭제 관리</span></li><li><span>매니지먼트 : 설치한 에코시스템 설정 변경 및 최적화 지원</span></li><li><span>모니터링 : 하드웨어 리소스 및 설치 컴포넌트 상태 모니터링/대시보드</span></li></ul><h4><a name="빅데이터-소프웨어-구성도-hodoop-echo-system-n1293" class="md-header-anchor"></a><span>빅데이터 소프웨어 구성도 (Hodoop Echo System)</span></h4><p><img src="http://cfile1.onoffmix.com/attach/h9nelLcaQ9OB3CQGMLTHbPFNmOggwj9V" referrerpolicy="no-referrer" alt="img"></p><h4><a name="server01-ssh-접속" class="md-header-anchor"></a><span>Server01 SSH 접속</span></h4><h5><a name="cm-59x-파일-다운로드-" class="md-header-anchor"></a><span>CM 5.9.x 파일 다운로드 : </span></h5><ul><li><span>wget </span><a href='http://archive.cloudera.com/cm5/redhat/6/x86_64/cm/cloudera-manager.repo' target='_blank' class='url'>http://archive.cloudera.com/cm5/redhat/6/x86_64/cm/cloudera-manager.repo</a></li></ul><h5><a name="설정변경" class="md-header-anchor"></a><span>설정변경</span></h5><ul><li><span>vi /root/cloudera-manager.repo</span></li><li><span>baseurl /5 &gt; /5.9.0 </span></li></ul><h5><a name="yum-레포지토리로-복사" class="md-header-anchor"></a><span>yum 레포지토리로 복사</span></h5><ul><li><span>mv /root/cloudera-manager.repo /etc/yum.repos.d/</span></li></ul><h5><a name="cm-설치" class="md-header-anchor"></a><span>CM 설치</span></h5><ul><li><span>yum install -y cloudera-manager-daemons</span></li><li><span>yum install -y cloudera-manager-server</span></li></ul><h5><a name="postgresql-설치-및-서비스-start" class="md-header-anchor"></a><span>PostgreSQL 설치 및 서비스 start</span></h5><ul><li><span>yum install -y cloudera-manager-server-db-2</span></li><li><span>service cloudera-scm-server-db start</span></li></ul><h5><a name="cm-start" class="md-header-anchor"></a><span>CM Start</span></h5><ul><li><span>service cloudera-scm-server start</span></li><li><span>service cloudera-scm-server status</span></li></ul><h5><a name="hosts-파일에-가상머신-정보-추가" class="md-header-anchor"></a><span>Hosts 파일에 가상머신 정보 추가</span></h5><ul><li><span>메모장 관리자 권한으로 실행</span></li><li><span>C:\Windows\System32\drivers\etc\hosts</span></li><li><span>192.168.56.101 server01.hadoop.com</span></li><li><span>192.168.56.102 server02.hadoop.com</span></li><li><span>192.168.56.103 server03.hadoop.com</span></li></ul><h5><a name="cm-접속" class="md-header-anchor"></a><span>CM 접속</span></h5><ul><li><span>접속 URL : </span><a href='http://server01.hadoop.com:7180' target='_blank' class='url'>http://server01.hadoop.com:7180</a></li><li><span>로그인 admin / admin</span></li></ul><p>&nbsp;</p><p>&nbsp;</p><h4><a name="빅데이터-기본-소프트웨어-설치" class="md-header-anchor"></a><span>빅데이터 기본 소프트웨어 설치</span></h4><ul><li><span>하둡, 주키퍼 등 기본 구성</span></li></ul><h5><a name="cdh-클러스터-설치에-대한-호스트를-지정합니다" class="md-header-anchor"></a><span>CDH 클러스터 설치에 대한 호스트를 지정합니다.</span></h5><ul><li><span>server01.hadoop.com</span></li><li><span>server02.hadoop.com</span></li><li><span>server03.hadoop.com (저사양 생략)</span></li></ul><h5><a name="클러스터-설치" class="md-header-anchor"></a><span>클러스터 설치</span></h5><ul><li><span>클러스터란 특정 도메인 안에서 하나로 묶여 있는 하둡 세트를 의미</span></li><li><span>KAFKA-4.1.0-1.4.1.0.p0.4  선택</span></li><li><span>JKD 설치 안함</span></li><li><span>단일사용자 모드 사용 안함</span></li><li><span>설치 진행중 오류 나면 서버 재시작 </span></li></ul><h5><a name="클러스터에-설치할-cdh-5-서비스" class="md-header-anchor"></a><span>클러스터에 설치할 CDH 5 서비스</span></h5><ul><li><span>사요자 지정 서비스</span></li><li><span>HDFS, YARN, ZooKeeper 선택</span></li><li><span>설치 오류시 로그 확인</span></li></ul><p><span>/var/log/cloudera-scm-server/cloudera-scm-server.log</span></p><h5><a name="hdfs" class="md-header-anchor"></a><span>HDFS</span></h5><ul><li><span>기본 or 저사양 시 DataNond : Server02만 설치</span></li></ul><h5><a name="cloudera-management-service" class="md-header-anchor"></a><span>Cloudera Management Service</span></h5><ul><li><span>기본 환경 Server01 =&gt;  Server03</span></li><li><span>저사양 Server01 =&gt;  Server02</span></li></ul><h5><a name="yarn" class="md-header-anchor"></a><span>YARN</span></h5><ul><li><span>3개 모두 Server01</span></li></ul><h5><a name="zookeeper" class="md-header-anchor"></a><span>ZooKeeper</span></h5><ul><li><span>Server02</span></li></ul><h5><a name="데이터베이스-설정" class="md-header-anchor"></a><span>데이터베이스 설정</span></h5><ul><li><span>테스트 연결 =&gt; 계속</span></li></ul><h5><a name="클러스트-설정--계속" class="md-header-anchor"></a><span>클러스트 설정 =&gt; 계속</span></h5><h5><a name="완료" class="md-header-anchor"></a><span>완료</span></h5><h5><a name="저사양-시-cloudera-management-service-는-중지-시킨다" class="md-header-anchor"></a><span>저사양 시 Cloudera Management Service 는 중지 시킨다</span></h5><h4><a name="datanode-추가-및-환경-설정저사양은-생략" class="md-header-anchor"></a><span>DataNode 추가 및 환경 설정(저사양은 생략)</span></h4><ul><li><span>상단 메뉴 &gt; 호스트 &gt; 역할등 확인</span></li><li><span>CM HOME &gt; HDFS &gt; 역할 인스턴스 추가</span></li><li><span>DataNode &gt; 사용자 지정 &gt; Server01 추가</span></li><li><span>완료 후 DataNode &gt; 선택한 작업 시작(HDFS  &gt; 인스턴스)</span></li></ul><h4><a name="파일럿-환경-최적화" class="md-header-anchor"></a><span>파일럿 환경 최적화</span></h4><h5><a name="hdfs-복제-계수-설정" class="md-header-anchor"></a><span>HDFS 복제 계수 설정</span></h5><ul><li><span>하둡 원본 파일의 복제본 갯수</span></li><li><span>HDFS &gt; 구성 &gt; 검색 &gt; 복제 계수 &gt; 2 (저사양 1)</span></li></ul><h5><a name="hdfs-블록-크기-변경" class="md-header-anchor"></a><span>HDFS 블록 크기 변경</span></h5><ul><li><span>HDFS &gt; 구성 &gt; 검색 &gt; HDFS 블록 크기</span></li><li><span>128 =&gt; 64 (블록수를 늘려 분산율을 높임)</span></li></ul><h5><a name="yarn-스케줄러와-리소스매니저-메모리-설정" class="md-header-anchor"></a><span>YARN 스케줄러와 리소스매니저 메모리 설정</span></h5><ul><li><span>YARN &gt; 구성 &gt; 검색 &gt;  yarn.scheduler.maximum-allocation-mb  &gt; 1 =&gt; 1.5GB</span></li><li><span>YARN &gt; 구성 &gt; 검색 &gt;  yarn.nodemanager.resource.memory-mb  &gt; 1 =&gt; 5GB</span></li></ul><h5><a name="yarn-스케줄러-변경" class="md-header-anchor"></a><span>YARN 스케줄러 변경</span></h5><ul><li><span>YARN &gt; 구성 &gt; 검색 &gt; scheduler class &gt;  FairScheduler  =&gt;  FifoScheduler </span></li><li><span>FifoScheduler 보완한 것이 FairScheduler(고사양시 사용)  </span></li></ul><h5><a name="클러스트-재시작" class="md-header-anchor"></a><span>클러스트 재시작 </span></h5><h5><a name="hdfs-yarn-이전-서비스-재시작클라이언트-구성배포" class="md-header-anchor"></a><span>HDFS, YARN 이전 서비스 재시작(클라이언트 구성배포)</span></h5><h4><a name="hdfs-명령어를-이용한-설치-확인" class="md-header-anchor"></a><span>HDFS 명령어를 이용한 설치 확인</span></h4><h5><a name="sample-file-upload--server02에-업로드" class="md-header-anchor"></a><span>sample file upload : Server02에 업로드</span></h5><ul><li><span>예제다운로드 : </span><a href='https://github.com/wikibook/bigdata' target='_blank' class='url'>https://github.com/wikibook/bigdata</a></li><li><span>/CH02/Sample.txt =&gt; Server02/home/bigdata upload</span></li></ul><h5><a name="hdfs-put" class="md-header-anchor"></a><span>HDFS put</span></h5><ul><li><span>cd /home/bigdata/</span></li><li><span>hdfs dfs -put Sample.txt /tmp</span></li></ul><h5><a name="hdfs-ls" class="md-header-anchor"></a><span>HDFS ls</span></h5><ul><li><span>hdfs dfs -ls /tmp/</span></li></ul><h5><a name="hdfs-cat" class="md-header-anchor"></a><span>HDFS cat</span></h5><ul><li><span>hdfs dfs -cat /tmp/Sample.txt </span></li></ul><h5><a name="hdfs-stat" class="md-header-anchor"></a><span>HDFS stat</span></h5><ul><li><span>hdfs dfs -stat &#39;%b %o %r %u %n&#39; /tmp/Sample.txt</span></li><li><span>b:파일크기, o:블럭크기, r:복제수, u:소유자명, n:파일명</span></li></ul><h5><a name="hdfs-mv--파일명-변경" class="md-header-anchor"></a><span>HDFS mv : 파일명 변경</span></h5><ul><li><span>hdfs dfs -mv /tmp/Sample.txt /tmp/Sample2.txt</span></li></ul><h5><a name="hdfs-시스템-상태-검사" class="md-header-anchor"></a><span>HDFS 시스템 상태 검사</span></h5><ul><li><span>hdfs dfsadmin -report</span></li><li><span>문제발생시 CORRUPT FILES, MISSING BLOCKS, MISSING SIZE 등 숫자 발생</span></li><li><span>비정상적인 파일 블럭 발견할 경우 다른 노드에 복구 하려고 시도</span></li></ul><h5><a name="안전모드로-상태-전환시-강제-안전모두-해제" class="md-header-anchor"></a><span>안전모드로 상태 전환시 강제 안전모두 해제</span></h5><ul><li><span>hdfs dfsadmin -safemode leave</span></li></ul><h5><a name="손상된-파일-각제로-삭제" class="md-header-anchor"></a><span>손상된 파일 각제로 삭제</span></h5><ul><li><span>hdsf fsck -delete</span></li></ul><h5><a name="손상된-파일-lost--found-로-이동" class="md-header-anchor"></a><span>손상된 파일 /lost + found 로 이동</span></h5><ul><li><span>hdfs fsck / -move</span></li></ul><h5><a name="hdfs-get--server01-에서-가져와-본다" class="md-header-anchor"></a><span>HDFS get : Server01 에서 가져와 본다</span></h5><ul><li><span>HDFS 저장 파일 로컬시스템으로 가져오기</span></li><li><span>hdfs dfs -get /tmp/Sample2.txt</span></li></ul><h5><a name="주키퍼-클라이언트-설치-확인--server02" class="md-header-anchor"></a><span>주키퍼 클라이언트 설치 확인 : Server02</span></h5><ul><li><span>$zookeeper-client</span></li><li><span>create /pilot-pjt bigdata</span></li><li><span>ls /</span></li><li><span>get /pilot-pjt</span></li><li><span>delete /pilot-pjt</span></li><li><span>quit</span></li></ul><h3><a name="스마트카-로그-시뮬레이터" class="md-header-anchor"></a><span>스마트카 로그 시뮬레이터</span></h3><ul><li><span>가상 시뮬레이터</span></li></ul><h4><a name="설치--server02" class="md-header-anchor"></a><span>설치 : Server02</span></h4><ul><li><span>$ cd /home</span></li><li><span>mkdir /home/pilot-pjt</span></li><li><span>mkdir /home/pilot-pjt/working</span></li><li><span>mkdir /home/pilot-pjt/working/car-batch-log</span></li><li><span>mkdir /home/pilot-pjt/working/driver-realtime-log</span></li><li><span>chmod 777 -R /home/pilot-pjt/</span></li></ul><h4><a name="file-upload" class="md-header-anchor"></a><span>File Upload</span></h4><ul><li><span>location :  /home/pilot-pjt/working</span></li><li><span>bigdata.smartcar.loggen-1.0.jar</span></li></ul><h4><a name="운전정보-시뮬레이터-file-실행-driverlogmain-날짜-차량수" class="md-header-anchor"></a><span>운전정보 시뮬레이터 File 실행 DriverLogMain 날짜 차량수</span></h4><ul><li><span>cd  /home/pilot-pjt/working</span></li><li><span>java -cp bigdata.smartcar.loggen-1.0.jar com.wikibook.bigdata.smartcar.loggen.DriverLogMain 20160101 10</span></li></ul><h5><a name="로그-확인" class="md-header-anchor"></a><span>로그 확인</span></h5><ul><li><span>cd  /home/pilot-pjt/working/driver-realtime-log</span></li><li><span>tail -f SmartCarDriverInfo.log</span></li></ul><h5><a name="실행-종료" class="md-header-anchor"></a><span>실행 종료</span></h5><ul><li><span>ps -ef | grep smartcar.log</span></li><li><span>kill -9 [PID]  참고: root 14628[PID] 4504</span></li></ul><h4><a name="car정보-시뮬레이터-file-실행-carlogmain-날짜-차량수" class="md-header-anchor"></a><span>Car정보 시뮬레이터 File 실행 CarLogMain 날짜 차량수</span></h4><ul><li><span>java -cp bigdata.smartcar.loggen-1.0.jar com.wikibook.bigdata.smartcar.loggen.CarLogMain 20160101 10</span></li></ul><h5><a name="로그-확인-n1560" class="md-header-anchor"></a><span>로그 확인</span></h5><ul><li><span>cd /home/pilot-pjt/working/SmartCar</span></li><li><span>tail -f SmartCarStatusInfo_20160101.txt</span></li></ul><h5><a name="실행-종료-n1566" class="md-header-anchor"></a><span>실행 종료</span></h5><ul><li><span>ps -ef | grep smartcar.log</span></li><li><span>kill -9 [PID]  참고: root 14628[PID] 4504</span></li></ul><h3><a name="파일럿-환경관리" class="md-header-anchor"></a><span>파일럿 환경관리</span></h3><h4><a name="파일럿-시작" class="md-header-anchor"></a><span>파일럿 시작</span></h4><ul><li><p><span>Server01, Server02, Server03 시작</span></p></li><li><p><span>SSH로 CM 구동 확인</span></p><ul><li><span>service cloudera-scm-server status</span></li></ul></li><li><p><span>CM 관리자 접속</span></p><ul><li><a href='http://server01.hadoop.com:7180' target='_blank' class='url'>http://server01.hadoop.com:7180</a></li><li><span>Cluster1 (클러스트) 재시작 =&gt; 저사양은 하지 않음</span></li></ul></li></ul><h4><a name="파일럿-종료" class="md-header-anchor"></a><span>파일럿 종료</span></h4><ul><li><p><span>CM 관리자 접속</span></p><ul><li><a href='http://server01.hadoop.com:7180' target='_blank' class='url'>http://server01.hadoop.com:7180</a></li><li><span>Cluster1 (클러스트) 중지</span></li></ul></li><li><p><span>Server01, Server02, Server03  종료 : halt</span></p></li></ul><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p></div>
+</body>
+</html>
