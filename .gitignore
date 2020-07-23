@@ -10,3 +10,6 @@ build/
 *.egg-info/
 *workspace.xml
 DataScience_Ing
+corpora
+pyml_rev_examples
+data_science/models/word2vec_sample/pruned.word2vec.txt
